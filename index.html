@@ -22,7 +22,7 @@
     </style>
 </head>
 
-<body class="min-h-screen bg-white font-['Poppins']">
+<body class="min-h-screen bg-[#F4EEDE] font-['Poppins']">
 
     <div class="flex flex-col md:flex-row min-h-[calc(100vh-32px)]">
         <!-- p5.js Sketch Section -->
@@ -54,8 +54,8 @@
                             <img src="img/pupper.jpg" alt="Profile Image">
                         </div>
                         <div class="border-t border-b py-6 border-gray-200">
-                            <h1 class="text-2xl font-bold">Sebastian Almeida</h1>
-                            <div class="text-gray-600">Creative Coder</div>
+                            <h1 class="text-4xl font-bold">Sebastian Almeida</h1>
+                            <div class="text-gray-600">Immersive Artist</div>
                         </div>
                     </div>
 
@@ -70,7 +70,7 @@
                     </div>
                     
                 </div>
-                <div class="px-4 py-12 border-t border-gray-200">
+                <div class="px-4 py-12">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         <!-- Gallery Item 1 -->
                         <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-200 hover:scale-105 bg-white">
@@ -157,14 +157,14 @@
                  <div class="my-8 mb-12">
                     <div class="flex justify-center gap-8 text-sm">
                         <a href="mailto:bashalmeida@gmail.com" class="flex items-center hover:text-gray-400">
-                            Email 
+                            Contact 
                             <span class="ml-2 [&>svg]:h-5 [&>svg]:w-5">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z" />
                               </svg>
                             </span>   
                         </a>
-                        <a href="#" class="flex items-center hover:text-gray-400">
+                        <a href="https://github.com/bashlikecash" class="flex items-center hover:text-gray-400">
                             Github
                             <!-- Github -->
                             <span class="ml-2 [&>svg]:h-5 [&>svg]:w-5">
@@ -178,21 +178,23 @@
                                 </svg>
                             </span>
                         </a>
-                        <a href="#" class="flex items-center hover:text-gray-400">
-                            LinkedIn
-                            <!-- Linkedin -->
+                        <!--
+                        <a href="https://observablehq.com/@bashlikecash" class="flex items-center hover:text-gray-400">
+                            Observable
+                            // Observable 
                             <span class="ml-2 [&>svg]:h-5 [&>svg]:w-5">
                                 <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
                                 viewBox="0 0 448 512">
-                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                                // !Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
                                 <path
                                     d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
                                 </svg>
                             </span>
                         </a>
-                        <a href="#" class="flex items-center hover:text-gray-400">
+                        -->
+                        <a href="https://www.instagram.com/bashlikecash/" class="flex items-center hover:text-gray-400">
                             Instagram 
                             <!-- Instagram -->
                             <span class="ml-2 [&>svg]:h-5 [&>svg]:w-5">
@@ -216,6 +218,7 @@
       let circles = [];
   
       function setup() {
+        // -------- THIS STAYS TO ADD IN YOUR SKETCH -----------
         // Get the container div
         let container = document.getElementById('sketch-container');
         // Create canvas with container dimensions
@@ -223,6 +226,7 @@
         // Move the canvas inside the container
         canvas.parent('sketch-container');
   
+        // -------- this comes out for your sketch??? -------------
         // Create some initial circles
         for (let i = 0; i < 10; i++) {
           circles.push({
@@ -236,6 +240,7 @@
       }
   
       function draw() {
+        // ----------- THIS COMES OUT FOR YOUR SKETCH --------------
         background(220);
         
         // Update and draw circles
@@ -254,12 +259,14 @@
           ellipse(circle.x, circle.y, circle.size);
         });
       }
-  
+      
+      // -------- THIS STAYS WHEN ADDING YOUR SKETCH ----------
       // Handle window resizing
       function windowResized() {
         let container = document.getElementById('sketch-container');
         resizeCanvas(container.offsetWidth, container.offsetHeight);
         
+        // --------- this part stays or gets adjusted for sizing still?? --------
         // Ensure circles stay within new bounds
         circles.forEach(circle => {
           circle.x = constrain(circle.x, 0, width);
