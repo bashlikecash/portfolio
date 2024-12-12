@@ -88,7 +88,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Gallery Item 1 -->
                         <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-200 hover:scale-105 bg-white group cursor-pointer"
-                             onclick="openModal('Bike Sounds', 'img/BikeProj.jpg', 'Bike Sounds is an immersive exhibit that creates a sonic 3D enviornment of going on a bike ride. This 32 speaker array uses Max MSP to map aggregated cycling data counting bikes going East and West accross the Broadway Bridge in Portland, OR over a calendar year. The more bikes, the louder it sounds! This audio file was recorded with a binaural microphone which captures all 32 speakers the way human ears would.')">
+                             onclick="openModal('Bike Sounds, 2024', 'img/BikeProj.jpg', 'Bike Sounds is an immersive exhibit that creates a sonic 3D enviornment of going on a bike ride. This 32 speaker array uses Max MSP to map aggregated cycling data counting bikes going East and West accross the Broadway Bridge in Portland, OR over a calendar year. The more bikes, the louder it sounds! This audio file was recorded with a binaural microphone which captures all 32 speakers the way human ears would.')">
                             <div class="relative">
                               <img src="img/BikeProj.jpg" alt="Bike Sounds" class="w-full h-48 object-cover">
                               <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -114,7 +114,7 @@
 
                         <!-- Gallery Item 3 -->
                         <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-200 hover:scale-105 bg-white group cursor-pointer"
-                             onclick="openModal('Family Affair', 'img/familyaffair.jpg', 'Prom!')">
+                             onclick="openModal('Family Affair, Jan 2024', 'img/familyaffair.jpg', 'Prom!')">
                             <div class="relative">
                               <img src="img/familyaffair.jpg" alt="Family Affair" class="w-full h-48 object-cover">
                               <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -140,7 +140,7 @@
 
                         <!-- Gallery Item 5 -->
                         <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-200 hover:scale-105 bg-white group cursor-pointer"
-                        onclick="openModal('Heat Seeking', 'img/synth.jpeg', 'Using a STO, Pittsburg, SMR, and clockI used the clock to set a beat on the pittsburg using a waveform from the STO. I used a sinewave to manipulate the rotate CV on the SMR and also patched in the clock to get the frequency nudges for 1/3/5 and 2/4/6 on the SMR. I took both outputs from the SMR and the Pittsburg into a mixer module to be able to control the volume.')">
+                        onclick="openModal('Heat Seeking, Dec 2023', 'img/synth.jpeg', 'Using a STO, Pittsburg, SMR, and clockI used the clock to set a beat on the pittsburg using a waveform from the STO. I used a sinewave to manipulate the rotate CV on the SMR and also patched in the clock to get the frequency nudges for 1/3/5 and 2/4/6 on the SMR. I took both outputs from the SMR and the Pittsburg into a mixer module to be able to control the volume.')">
                             <div class="relative">
                               <img src="img/synth.jpeg" alt="Synth Beat" class="w-full h-48 object-cover">
                               <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -253,9 +253,9 @@
         </main>
     </div>
   <!-- Modal Container -->
-  <div id="modal" class="fixed inset-0 z-50 hidden">
-    <div class="fixed inset-0 bg-black/50" onclick="closeModal()"></div>
-      <div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/75 backdrop-blur-sm rounded-lg p-6 max-w-lg w-11/12 shadow-xl">
+  <div id="modal" class="fixed inset-0 z-50 hidden overflow-hidden">
+    <div class="fixed inset-0 bg-black/50 " onclick="closeModal()"></div>
+      <div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/75 backdrop-blur-sm rounded-lg p-6 max-w-lg w-11/12 shadow-xl max-h-[90vh] overflow-y-auto scroll-smooth">
           <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
