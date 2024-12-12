@@ -88,7 +88,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Gallery Item 1 -->
                         <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-200 hover:scale-105 bg-white group cursor-pointer"
-                             onclick="openModal('Bike Sounds', 'img/BikeProj.jpg', 'Description about bike sounds project')">
+                             onclick="openModal('Bike Sounds', 'img/BikeProj.jpg', 'Bike Sounds is an immersive exhibit that creates a sonic 3D enviornment of going on a bike ride. This 32 speaker array uses Max MSP to map aggregated cycling data accross the Broadway Bridge in Portland, OR. to create a sonic 3D enviornment of ')">
                             <div class="relative">
                               <img src="img/BikeProj.jpg" alt="Bike Sounds" class="w-full h-48 object-cover">
                               <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -100,7 +100,8 @@
                           </div>
 
                         <!-- Gallery Item 2 -->
-                        <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-200 hover:scale-105 bg-white group cursor-pointer">
+                        <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-200 hover:scale-105 bg-white group cursor-pointer"
+                             onclick="openModal('Drawings', 'img/drawing.jpg', 'These are all my drawings')">
                             <div class="relative">
                               <img src="img/drawing.jpg" alt="Drawings" class="w-full h-48 object-cover">
                               <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -112,7 +113,8 @@
                           </div>
 
                         <!-- Gallery Item 3 -->
-                        <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-200 hover:scale-105 bg-white group">
+                        <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-200 hover:scale-105 bg-white group"
+                             onclick="openModal('Family Affair', 'img/familyaffair.jpg', 'Prom!')">
                             <div class="relative">
                               <img src="img/familyaffair.jpg" alt="Family Affair" class="w-full h-48 object-cover">
                               <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -251,15 +253,16 @@
   <!-- Modal Container -->
   <div id="modal" class="fixed inset-0 z-50 hidden">
     <div class="fixed inset-0 bg-black/50" onclick="closeModal()"></div>
-    <div class="relative bg-white/50 backdrop-blur-sm rounded-lg p-6 max-w-2xl mx-auto mt-20 w-11/12 shadow-xl">
-      <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-      <img id="modalImage" src="" alt="" class="w-full rounded-lg">
-      <h2 id="modalTitle" class="text-2xl font-bold text-gray-800 mt-4"></h2>
-      <p id="modalDescription" class="text-gray-600 mt-2"></p>
+      <div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/50 backdrop-blur-sm rounded-lg p-6 max-w-lg w-11/12 shadow-xl">
+          <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <img id="modalImage" src="" alt="" class="w-full rounded-lg">
+          <h2 id="modalTitle" class="text-2xl font-bold text-gray-800 mt-4"></h2>
+          <p id="modalDescription" class="text-gray-600 mt-2"></p>
+        </div>
     </div>
   </div>
 
